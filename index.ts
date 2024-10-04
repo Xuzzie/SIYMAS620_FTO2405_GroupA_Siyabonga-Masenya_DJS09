@@ -3,8 +3,12 @@ const userNameDisplay = document.querySelector("#user");
 const reviewTotalDisplay = document.querySelector("#reviews");
 
 let isOpen: boolean;
-
-const reviews = [
+const reviews: {
+  name: string;
+  stars: number;
+  loyaltyUser: boolean;
+  date: string;
+}[] = [
   {
     name: "Sheia",
     stars: 5,
@@ -22,6 +26,9 @@ const reviews = [
     stars: 4,
     loyaltyUser: true,
     date: "27-03-2021",
+  },
+  {
+    name: 5,
   },
 ];
 
